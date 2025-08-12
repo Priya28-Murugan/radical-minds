@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const isProd = process.env.NODE_ENV === 'production';
+
+const nextConfig = {
   basePath: '/radical-minds',
-  assetPrefix: '/radical-minds/',
-  output: 'export', 
+  assetPrefix: isProd ? '/radical-minds/' : '',
+  output: 'export',
 };
+
 export default nextConfig;
+
 
