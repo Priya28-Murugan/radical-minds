@@ -9,4 +9,4 @@ pages:
     paths:
       - out
   only:
-    - main  # or your default branch name
+    - main  
