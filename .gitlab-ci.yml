@@ -1,0 +1,12 @@
+image: node:18.18.0
+
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - out
+  only:
+    - main  
